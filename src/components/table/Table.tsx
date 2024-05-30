@@ -42,22 +42,17 @@ export default function Table() {
               </td>
               <td
                 className={clsx(
-                  "py-3 md:py-[22px] px-2 text-black md:w-full  text-start text-nowrap md:pl-10 text-opacity-60 hover:text-opacity-100 border-t border-b border-grey-4 font-[400] font-switzer md:text-[22px] md:leading-6 hover:bg-grey-5 ",
+                  "py-3 md:py-[22px] px-2 text-black md:w-full text-start text-nowrap md:pl-10 text-opacity-60 hover:text-opacity-100 border-t border-b border-grey-4 font-[400] font-switzer md:text-[22px] md:leading-6 hover:bg-grey-5 ",
                   { "border-r-0 border-l-0": !row.category && !row.category2 }
                 )}
               >
-                {row.question}{" "}
-                {hoveredRowIndex === index && (
-                  <td className="absolute right-10 inset-0 flex items-center justify-end  ">
-                    <img src={arrowIcon} alt="" />
-                  </td>
-                )}
+                <div className="flex w-full">
+                  {row.question}{" "}
+                  {hoveredRowIndex === index && (
+                    <img src={arrowIcon} alt="arrow icon" className="md:pl-[272px]" />
+                  )}
+                </div>
               </td>
-              {hoveredRowIndex === index && (
-                <td className="absolute right-10 inset-0 flex items-center justify-end  ">
-                  <img src={arrowIcon} alt="" />
-                </td>
-              )}
             </tr>
           ))}
         </tbody>
