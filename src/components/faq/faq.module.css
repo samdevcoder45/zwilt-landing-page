@@ -1,0 +1,28 @@
+/* FAQ.module.css */
+.faq {
+  /* styles for the main FAQ container */
+  margin: 2rem 0; /* add some margin */
+}
+
+.faqItem {
+  /* styles for each question-answer pair */
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.category {
+  /* styles for the category heading */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.question {
+  /* styles for the question text */
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.answer {
+  /* styles for the answer text */
+}

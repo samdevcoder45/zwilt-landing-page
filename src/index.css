@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.gradient-border {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(32, 34, 41, 0.37) 99.01%
+  );
+  border-image-slice: 1;
+}
+
+.clip-rectangular {
+  /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
+  clip-path: polygon(0% 20%, 100% 10%, 100% 90%, 0% 100%);
+}
+
+.clip-path-30-degrees {
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
+}
+.clip-path-45-degrees {
+  clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
+}
+
+.text-gradient {
+  background: linear-gradient(90.32deg, #50589f 0.28%, #ffbe2e 102.68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.flip-image {
+  transform: scaleX(-1);
+}
+
+.rounded-corner {
+  border-top-left-radius: 21.15px;
+  border-bottom-left-radius: 21.15px;
+  border-top-right-radius: 21.15px;
+  border-bottom-right-radius: 21.15px;
+}
+
+.custom-45deg {
+  clip-path: polygon(100% 100%, 100% 0, 0% 8%, 0 100%);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease-out;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s ease-out;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Switzer";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Switzer-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Switzer";
+    src: url("/fonts/Switzer-Semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+  }
+}
