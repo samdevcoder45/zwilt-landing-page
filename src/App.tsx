@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Layout from "./components/container/Layout";
+// import Layout from "./components/container/Layout";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./Pages/home/Home";
@@ -8,7 +8,7 @@ import NotFound from "./Pages/home/NotFound";
 
 function App() {
   return (
-    <Layout>
+    <>
       <Header />
       <Suspense fallback={<div className="animate-spin"></div>}>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
-    </Layout>
+    </>
   );
 }
 
