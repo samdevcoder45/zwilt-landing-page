@@ -1,3 +1,9 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="">{children}</div>;
+import { Outlet } from "react-router-dom";
+
+export default function Layout() {
+  return (
+    <main>
+      <Outlet />
+    </main>
+  );
 }
