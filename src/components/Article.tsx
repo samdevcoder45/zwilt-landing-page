@@ -14,8 +14,8 @@ export default function Article({
 }) {
   return (
     <div className="flex">
-      <div className="md:pt-[24px] pt-3">
-        <img src={icon} alt="" />
+      <div className="md:pt-[24px] pt-3 w-full flex justify-between">
+        <img src={icon} alt="" className="" />
       </div>
       <div className="md:pl-[19px]">
         <Subtitle className="md:pb-5 max-w-[365px]" text={title} />
