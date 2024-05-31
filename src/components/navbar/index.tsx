@@ -15,7 +15,7 @@ export default function NavLinks() {
   return (
     <HeaderCard className="flex justify-between mx-6 items-center w-[90%]  bg-navy-blue mt-5 md:mt-[36px] md:mx-70 h-[50px] md:h-60 shadow-light">
       <div className="ml-3 md:ml-6">
-        <Link to="/">
+        <Link to="/zwilt-landing-page">
           <ZwitLogo />
         </Link>
       </div>
@@ -36,7 +36,11 @@ export default function NavLinks() {
           ))}
         </ul>
         <div className="md:hidden flex items-center">
-          <Button onClick={toggleNav} aria-label="Hamburger Button" className="text-white focus:outline-none">
+          <Button
+            onClick={toggleNav}
+            aria-label="Hamburger Button"
+            className="text-white focus:outline-none"
+          >
             <svg
               className="w-6 h-6"
               fill="none"

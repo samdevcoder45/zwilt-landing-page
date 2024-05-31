@@ -14,7 +14,7 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <Routes>
           <Route path="/" element={<Layout />} />
-          <Route path="/" index element={<Home />} />
+          <Route path="/zwilt-landing-page" index element={<Home />} />
           <Route path="*" element={<NotFound />} />
           {/* public routes */}
           {/* public routes */}
