@@ -1,13 +1,12 @@
 import Accordion from "./accordion/Accordion";
-// import JourneyCard from "./cards/journey-card";
 import H2 from "./titles/title2";
-import journeyBg from "../assets/journey-rec.svg";
+import purpleBg from "../assets/purple-bg.png";
 import yellowBg from "../assets/yellow-rectangle.svg";
 import greyBg from "../assets/grey-rectangle.svg";
 import Article from "./Article";
-import icon1 from "../assets/light-purple-bg.svg";
-import icon2 from "../assets/light-yellow-bg.svg";
-import icon3 from "../assets/light-grey-bg.svg";
+import letter1Image from "../assets/number-1.svg";
+import letter2Image from "../assets/number-2.svg";
+import letter3Img from "../assets/number-3.svg";
 import teamBg from "../assets/team-svg.svg";
 import evalBg from "../assets/content.png";
 import performerBg from "../assets/perfomer.png";
@@ -31,7 +30,7 @@ export default function CustomerSatisfaction() {
           <H2 className="max-w-[618px] " text="Start your journey today." />
           <div
             className="bg-cover flex justify-between bg-center relative w-full  px-3 md:h-[387.5px] md:pl-[25px] md:pr-[37px]"
-            style={{ backgroundImage: `url(${journeyBg})` }}
+            style={{ backgroundImage: `url(${purpleBg})` }}
           >
             <div className="max-w-[445px] pt-[1rem] md:pt-[90px]">
               <Article
@@ -39,7 +38,7 @@ export default function CustomerSatisfaction() {
                 desc="  Explore the vast Zwilt marketplace to find the candidate that meets
                 your needs."
                 iconText="Join Now"
-                icon={icon1}
+                icon={letter1Image}
               />
             </div>
             <div className="">
@@ -60,7 +59,7 @@ export default function CustomerSatisfaction() {
                   title="Evaluate to your heart’s content."
                   desc="Assess the candidate through work history, transparent tests and video interviews."
                   iconText="Browse More"
-                  icon={icon2}
+                  icon={letter2Image}
                 />
               </div>
               <div className="">
@@ -82,7 +81,7 @@ export default function CustomerSatisfaction() {
                 title="Start building your team."
                 desc="Onboard your candidate right away and start creating the next big thing."
                 iconText="Join Now"
-                icon={icon3}
+                icon={letter3Img}
               />
             </div>
             <div className="">
