@@ -36,7 +36,7 @@ export default function NavLinks() {
           ))}
         </ul>
         <div className="md:hidden flex items-center">
-          <Button onClick={toggleNav} className="text-white focus:outline-none">
+          <Button onClick={toggleNav} aria-label="Hamburger Button" className="text-white focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"

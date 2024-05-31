@@ -1,7 +1,6 @@
-import smImg from "../assets/sm-img.png";
+import smImg from "../assets/sm-img.jpg";
 import DesignCard from "./cards/design-card";
 import HeroForm from "./forms/hero-form";
-// import slantGradient from "../assets/slant-gradient.svg";
 import slantGradient from "../assets/gradient.png";
 export default function Hero() {
   return (
@@ -9,7 +8,7 @@ export default function Hero() {
       <div className="max-w-[90%] md:max-w-[671px]">
         <h1 className="text-[27px] leading-8 md:text-[54px] text-center md:leading-[64px] font-bold font-switzer">
           Finding the right fit
-          <img src={smImg} alt="" className="inline-flex items-center" />
+          <img src={smImg} alt="" className="inline-flex items-center" width={68} height={43}/>
           has never been easier.
         </h1>
       </div>
@@ -28,7 +27,9 @@ export default function Hero() {
       <div className="md:mt-[78px] w-full">
         <img
           src={slantGradient}
-          alt=""
+          width={100}
+          height={100}
+          alt="Slant Image"
           className="w-full relative -bottom-12 md:-bottom-8"
         />
       </div>

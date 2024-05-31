@@ -53,9 +53,9 @@ export default function Footer() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
               {footerData.map((links) => (
                 <div key={links.header}>
-                  <h4 className="text-[14px] leading-[32px] uppercase text-white opacity-40 font-semibold font-switzer">
+                  <h6 className="text-[14px] leading-[32px] uppercase text-white opacity-40 font-semibold font-switzer">
                     {links.header}
-                  </h4>
+                  </h6>
                   <ul>
                     {links.links.map((link) => (
                       <li key={link.text} className="mt-3">
