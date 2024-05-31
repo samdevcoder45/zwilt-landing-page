@@ -15,7 +15,9 @@ export default function NavLinks() {
   return (
     <HeaderCard className="flex justify-between mx-6 items-center w-[90%]  bg-navy-blue mt-5 md:mt-[36px] md:mx-70 h-[50px] md:h-60 shadow-light">
       <div className="ml-3 md:ml-6">
-        <ZwitLogo />
+        <Link to="/">
+          <ZwitLogo />
+        </Link>
       </div>
       <nav>
         <ul className="hidden md:flex items-center">
